@@ -13,7 +13,9 @@ body {
 }
 
 header {
-    background-color: #FFFFFF; 
+    background-image: url('C:\Users\roaab\OneDrive\Pictures\CSS Advanced\Object.png'); 
+    background-size: cover;
+    background-position: center;
     padding: 1rem;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 
 }
@@ -54,7 +56,7 @@ main {
 
 section {
     margin-bottom: 2rem;
-    position: relative; /* Ensure sections are positioned relatively for absolute positioning */
+    position: relative; 
 }
 
 section h1 {
@@ -81,13 +83,45 @@ section button {
     font-size: 16px; 
     cursor: pointer;
     transition: background-color 0.3s ease;
-    position: absolute; /* Position buttons absolutely within their relative container */
-    bottom: -1rem; /* Adjust the positioning to overlap */
-    left: 50%; /* Center horizontally */
-    transform: translateX(-50%); /* Adjust to center exactly */
+    position: absolute;
+    bottom: -1rem; 
+    left: 50%;
+    transform: translateX(-50%); 
 }
 
 section button:hover {
+    background-color: #2C5282;
+}
+
+.banner {
+    background-image: url("C:\Users\roaab\OneDrive\Pictures\CSS Advanced\Object.png"); 
+    background-size: cover;
+    background-position: center;
+    padding: 4rem 2rem;
+    text-align: center;
+    color: #FFFFFF; /* Ensure text color contrasts with the background image */
+}
+
+.banner h1 {
+    font-size: 48px;
+    margin-bottom: 1rem;
+}
+
+.banner p {
+    font-size: 18px;
+    margin-bottom: 2rem;
+}
+
+.banner button {
+    background-color: #3182CE;
+    border: none;
+    padding: 1rem 2rem;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.banner button:hover {
     background-color: #2C5282;
 }
 
