@@ -1,4 +1,4 @@
-/* Reset and basic styles */
+/* Reset and global styles */
 * {
     margin: 0;
     padding: 0;
@@ -6,77 +6,105 @@
 }
 
 body {
-    font-family: 'Arial', sans-serif;
+    font-family: 'Source Sans Pro', sans-serif;
     line-height: 1.6;
-    background-color: #f5f5f5; /* Figma: #F5F5F5 */
+    background-color: #F7F8FC; 
+    color: #2D3748; 
 }
 
-/* Header styling */
 header {
-    background-color: #ffffff; /* Figma: #FFFFFF */
-    padding: 20px;
+    background-color: #FFFFFF; 
+    padding: 1rem;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 
+}
+
+header nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Example box-shadow */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
-header img {
-    max-width: 100%;
-    height: auto;
+header nav img {
+    height: 50px; 
 }
 
 header nav ul {
     list-style-type: none;
     display: flex;
+    gap: 1rem;
 }
 
 header nav ul li {
-    margin-right: 20px;
+    font-size: 14px; 
 }
 
 header nav ul li a {
     text-decoration: none;
-    color: #333333; /* Figma: #333333 */
-    font-weight: bold;
+    color: #4A5568; 
 }
 
-/* First section styling */
-main > section:nth-child(1) {
-    background-color: #f8f9fa; /* Figma: #F8F9FA */
-    padding: 80px 0;
+header nav ul li a:hover {
+    color: #2D3748; 
 }
 
-main > section:nth-child(1) > div {
-    max-width: 800px;
-    margin: 0 auto;
-    text-align: center;
+main {
+    padding: 2rem;
 }
 
-main > section:nth-child(1) h1 {
-    font-size: 48px;
-    margin-bottom: 20px;
-    color: #212529; /* Figma: #212529 */
+section {
+    margin-bottom: 2rem;
 }
 
-main > section:nth-child(1) span {
-    display: block;
-    font-size: 24px;
-    margin-bottom: 20px;
-    color: #6c757d; /* Figma: #6C757D */
+section h1 {
+    font-size: 42px; 
+    color: #2D3748; 
+    margin-bottom: 1rem;
 }
 
-main > section:nth-child(1) button {
-    background-color: #007bff; /* Figma: #007BFF */
-    color: #ffffff; /* Figma: #FFFFFF */
+section h2 {
+    font-size: 24px; 
+    color: #2D3748; 
+    margin-bottom: 1rem;
+}
+
+section p {
+    font-size: 16px; 
+    color: #4A5568; 
+}
+
+section button {
+    background-color: #3182CE; 
     border: none;
-    padding: 12px 32px;
-    font-size: 18px;
+    padding: 1rem 2rem;
+    font-size: 16px; 
     cursor: pointer;
-    border-radius: 4px;
     transition: background-color 0.3s ease;
 }
 
-main > section:nth-child(1) button:hover {
-    background-color: #0056b3; /* Figma: #0056B3 */
+section button:hover {
+    background-color: #2C5282;
+}
+
+footer {
+    background-color: #2D3748;
+    color: #FFFFFF;
+    padding: 1rem;
+    text-align: center;
+}
+
+footer p {
+    font-size: 14px; 
+}
+
+@media screen and (max-width: 768px) {
+    header nav {
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    header nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
 }
