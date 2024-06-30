@@ -1,4 +1,6 @@
+/* styles.css */
 
+/* Reset basic elements */
 * {
     margin: 0;
     padding: 0;
@@ -15,44 +17,229 @@ body {
 /* Header styling */
 header {
     background-color: #f8f9fa;
-    height: 60px;
+    padding: 20px;
     display: flex;
-    align-items: center;
     justify-content: space-between;
-    padding: 0 20px;
+    align-items: center;
 }
 
-header .logo {
-    height: 40px;
+header img {
+    max-width: 100%;
+    height: auto;
 }
 
-header nav a {
-    color: #333;
+header nav ul {
+    list-style-type: none;
+    display: flex;
+}
+
+header nav ul li {
+    margin-right: 20px;
+}
+
+header nav ul li a {
     text-decoration: none;
-    margin: 0 15px;
-    font-size: 16px;
+    color: #333;
+    font-weight: bold;
+}
+
+/* Main styling */
+main {
+    padding: 20px;
 }
 
 /* First section styling */
-.first-section {
-    background-color: #ffffff;
-    padding: 50px 20px;
-    text-align: center;
+main > section:nth-child(1) {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 40px;
 }
 
-.first-section h1 {
-    color: #333;
+main > section:nth-child(1) h1 {
     font-size: 36px;
+    margin-bottom: 10px;
+}
+
+main > section:nth-child(1) div {
+    flex: 1;
+    padding-right: 20px;
+}
+
+main > section:nth-child(1) span {
+    display: block;
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+main > section:nth-child(1) button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+main > section:nth-child(1) button:hover {
+    background-color: #0056b3;
+}
+
+/* Second section styling */
+main > section:nth-child(2) {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 40px;
+}
+
+main > section:nth-child(2) h2 {
+    font-size: 24px;
     margin-bottom: 20px;
 }
 
-.first-section p {
-    color: #666;
-    font-size: 18px;
-    line-height: 1.6;
+main > section:nth-child(2) div > div {
+    text-align: center;
+    margin-bottom: 20px;
 }
 
-.first-section img {
+main > section:nth-child(2) div img {
     max-width: 100%;
     height: auto;
+}
+
+main > section:nth-child(2) div h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+main > section:nth-child(2) div p {
+    color: #666;
+}
+
+/* Third section styling */
+main > section:nth-child(3) {
+    margin-bottom: 40px;
+}
+
+main > section:nth-child(3) h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+main > section:nth-child(3) div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+main > section:nth-child(3) div > div {
+    text-align: center;
+}
+
+main > section:nth-child(3) div img {
+    max-width: 100%;
+    height: auto;
+}
+
+main > section:nth-child(3) div h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+main > section:nth-child(3) div p {
+    color: #666;
+}
+
+/* Fourth section styling */
+main > section:nth-child(4) {
+    margin-bottom: 40px;
+}
+
+main > section:nth-child(4) h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+main > section:nth-child(4) div {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 20px;
+}
+
+main > section:nth-child(4) div img {
+    max-width: 100%;
+    height: auto;
+    margin-right: 20px;
+}
+
+main > section:nth-child(4) div h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+main > section:nth-child(4) div p {
+    color: #666;
+}
+
+/* Fifth section styling */
+main > section:nth-child(5) {
+    margin-bottom: 40px;
+}
+
+main > section:nth-child(5) h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+main > section:nth-child(5) div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+main > section:nth-child(5) div img {
+    max-width: 100%;
+    height: auto;
+    margin-right: 20px;
+}
+
+main > section:nth-child(5) div h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+main > section:nth-child(5) div p {
+    color: #666;
+}
+
+/* Footer styling */
+footer {
+    background-color: #f8f9fa;
+    padding: 20px;
+    text-align: center;
+}
+
+footer img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+footer div {
+    margin-top: 10px;
+}
+
+footer div i {
+    font-size: 24px;
+    margin-right: 10px;
+    color: #333;
+}
+
+footer p {
+    font-size: 14px;
+    color: #666;
 }
