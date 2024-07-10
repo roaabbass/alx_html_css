@@ -52,7 +52,7 @@ header {
 }
 
 .hero {
-    background-image: url("images/headphones_hero_1.jpg"); /* Ensure this path is correct */
+    background-image: url("images/headphones_hero_1.jpg"); 
     background-size: cover;
     background-position: center;
     color: #fff;
@@ -154,5 +154,58 @@ header {
 
     .toggle-menu {
         display: block;
+    }
+}
+
+@media (max-width: 1024px) {
+    .service {
+        flex: 1 1 45%;
+        max-width: 45%;
+    }
+}
+
+@media (max-width: 768px) {
+    .services {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .service {
+        max-width: 80%;
+    }
+
+    .hero h1 {
+        font-size: 2.5rem;
+    }
+
+    .hero p {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .hero h1 {
+        font-size: 2rem;
+    }
+
+    .hero p {
+        font-size: 0.9rem;
+    }
+
+    .btn {
+        padding: 8px 16px;
+        font-size: 0.9rem;
+    }
+
+    .service i {
+        font-size: 2.5rem;
+    }
+
+    .service h3 {
+        font-size: 1.2rem;
+    }
+
+    .service p {
+        font-size: 0.9rem;
     }
 }
