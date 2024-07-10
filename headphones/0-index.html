@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Headphones Company</title>
     <link rel="stylesheet" href="0-styles.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    
 </head>
 <body>
     <header>
@@ -16,10 +16,9 @@
                 </div>
                 <i class="fas fa-bars toggle-menu" onclick="toggleMenu()"></i>
                 <ul class="nav-links">
-                    <li><a href="#home">Home</a></li>
-                    <li><a href="#products">Products</a></li>
-                    <li><a href="#about">About Us</a></li>
-                    <li><a href="#contact">Contact</a></li>
+                    <li><a href="#home">what we do</a></li>
+                    <li><a href="#products">our results</a></li>
+                    <li><a href="#contact">Contact us</a></li>
                 </ul>
             </div>
         </nav>
@@ -27,16 +26,18 @@
             <div class="container">
                 <h1>Welcome to Headphones Company</h1>
                 <p>Discover the best headphones in town.</p>
-                <a href="#products" class="btn">Explore</a>
+                <a href="#products" class="btn">CALL TO ACTION</a>
             </div>
         </div>
     </header>
 
     <script>
-        function toggleMenu() {
-            const navLinks = document.querySelector('.nav-links');
+        const toggleMenu = document.querySelector('.toggle-menu');
+        const navLinks = document.querySelector('.nav-links');
+
+        toggleMenu.addEventListener('click', () => {
             navLinks.classList.toggle('active');
-        }
+        });
     </script>
 </body>
 </html>

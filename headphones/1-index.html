@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Headphones Company</title>
+    <link rel="stylesheet" href="0-styles.css">
+
+
+    <link rel="stylesheet" href="1-styles.css"> 
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="container">
+                <div class="logo">
+                    <img src="images/logo_headphones.png" alt="Logo">
+                </div>
+                <i class="fas fa-bars toggle-menu" onclick="toggleMenu()"></i>
+                <ul class="nav-links">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#products">Products</a></li>
+                    <li><a href="#about">About Us</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+        <div class="hero">
+            <div class="container">
+                <h1>Welcome to Headphones Company</h1>
+                <p>Discover the best headphones in town.</p>
+                <a href="#products" class="btn">CALL TO ACTION</a>
+            </div>
+        </div>
+    </header>
+
+    <section class="what-we-do">
+        <div class="container">
+            <h2>What we do...</h2>
+            <div class="services">
+                <div class="service">
+                    <i class="icon icon-headphones"></i>
+                    <h3>Quality Headphones</h3>
+                    <p>We offer a wide range of high-quality headphones suitable for every need.</p>
+                </div>
+                <div class="service">
+                    <i class="icon icon-music"></i>
+                    <h3>Exclusive Music Experience</h3>
+                    <p>Explore our collection designed to enhance your music listening experience.</p>
+                </div>
+                <div class="service">
+                    <i class="icon icon-warranty"></i>
+                    <h3>Extended Warranty</h3>
+                    <p>Enjoy peace of mind with our extended warranty options on all products.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script>
+        function toggleMenu() {
+            const navLinks = document.querySelector('.nav-links');
+            navLinks.classList.toggle('active');
+        }
+    </script>
+</body>
+</html>
