@@ -3,65 +3,74 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Headphones Company</title>
-    <link rel="stylesheet" href="0-styles.css">
-
-
-    <link rel="stylesheet" href="1-styles.css"> 
+    <title>Headphone Company</title>
+    <link rel="stylesheet" href="1-styles.css">
+    <link rel="stylesheet" href="holberton_school-icon/">
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
 </head>
 <body>
     <header>
-        <nav>
-            <div class="container">
+        <div class="container">
+            <nav>
                 <div class="logo">
-                    <img src="images/logo_headphones.png" alt="Logo">
+                    <img src="C:\Users\roaab\alx_html_css\headphones\headphones\headphones\images\logo_headphones.png" alt="Company Logo">
                 </div>
-                <i class="fas fa-bars toggle-menu" onclick="toggleMenu()"></i>
                 <ul class="nav-links">
-                    <li><a href="#home">Home</a></li>
-                    <li><a href="#products">Products</a></li>
-                    <li><a href="#about">About Us</a></li>
-                    <li><a href="#contact">Contact</a></li>
+                    <li><a href="#">what we do</a></li>
+                    <li><a href="#">our results</a></li>
+                    <li><a href="#">Contact Us</a></li>
                 </ul>
-            </div>
-        </nav>
-        <div class="hero">
-            <div class="container">
-                <h1>Welcome to Headphones Company</h1>
-                <p>Discover the best headphones in town.</p>
-                <a href="#products" class="btn">CALL TO ACTION</a>
+                <div class="toggle-menu">
+                    <i class="fas fa-bars"></i>
+                </div>
+            </nav>
+            <div class="hero">
+                <div class="container">
+                    <h1>Welcome to the Headphone Company</h1>
+                    <p>Your perfect sound companion</p>
+                    <a href="#" class="btn">CALL TO ACTION</a>
+                </div>
             </div>
         </div>
     </header>
 
+    <!-- What We Do Section -->
     <section class="what-we-do">
         <div class="container">
             <h2>What we do...</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
             <div class="services">
                 <div class="service">
-                    <i class="icon icon-headphones"></i>
-                    <h3>Quality Headphones</h3>
-                    <p>We offer a wide range of high-quality headphones suitable for every need.</p>
+                    <i class=""></i>
+                    <h3>Lorem ipsum</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
                 </div>
                 <div class="service">
-                    <i class="icon icon-music"></i>
-                    <h3>Exclusive Music Experience</h3>
-                    <p>Explore our collection designed to enhance your music listening experience.</p>
+                    <i class="icon-holberton_school-icon-2"></i>
+                    <h3>Lorem ipsum</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
                 </div>
                 <div class="service">
-                    <i class="icon icon-warranty"></i>
-                    <h3>Extended Warranty</h3>
-                    <p>Enjoy peace of mind with our extended warranty options on all products.</p>
+                    <i class="icon-holberton_school-icon-3"></i>
+                    <h3>Lorem ipsum</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                </div>
+                <div class="service">
+                    <i class="icon-holberton_school-icon-4"></i>
+                    <h3>Lorem ipsum</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
                 </div>
             </div>
         </div>
     </section>
 
     <script>
-        function toggleMenu() {
-            const navLinks = document.querySelector('.nav-links');
+        const toggleMenu = document.querySelector('.toggle-menu');
+        const navLinks = document.querySelector('.nav-links');
+
+        toggleMenu.addEventListener('click', () => {
             navLinks.classList.toggle('active');
-        }
+        });
     </script>
 </body>
 </html>
