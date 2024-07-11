@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Headphone Company</title>
+    <link rel="stylesheet" href="2-styles.css">
+    <link rel="stylesheet" href="holberton_school-icon/holberton_school-icon.css"> 
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <nav>
+                <div class="logo">
+                    <img src="images/logo_headphones.png" alt="Company Logo"> 
+                </div>
+                <ul class="nav-links">
+                    <li><a href="#">What we do</a></li>
+                    <li><a href="#">Our results</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                </ul>
+                <div class="toggle-menu">
+                    <i class="fas fa-bars"></i>
+                </div>
+            </nav>
+            <div class="hero">
+                <div class="container">
+                    <h1>Welcome to the Headphone Company</h1>
+                    <p>Your perfect sound companion</p>
+                    <a href="#" class="btn">CALL TO ACTION</a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- What We Do Section -->
+    <section class="what-we-do">
+        <div class="container">
+            <h2>What we do...</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+            <div class="services">
+                <div class="service">
+                    <i class="icon-holberton_school-icon-1"></i>
+                    <h3>Lorem ipsum</h3>
+                    <p>
+                        <span class="holberton_school-icon-ic_sound"></span>
+                        <span class="mls"> holberton_school-icon-ic_sound</span>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    </p>
+                </div>
+                <div class="service">
+                    <i class="icon-holberton_school-icon-2"></i>
+                    <h3>Lorem ipsum</h3>
+                    <p>
+                        <span class="holberton_school-icon-ic_video"></span>
+                        <span class="mls"> holberton_school-icon-ic_video</span>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    </p>
+                </div>
+                <div class="service">
+                    <i class="icon-holberton_school-icon-3"></i>
+                    <h3>Lorem ipsum</h3>
+                    <p>
+                        <span class="holberton_school-icon-ic_music"></span>
+                        <span class="mls"> holberton_school-icon-ic_music</span>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    </p>
+                </div>
+                <div class="service">
+                    <i class="icon-holberton_school-icon-4"></i>
+                    <h3>Lorem ipsum</h3>
+                    <p>
+                        <span class="holberton_school-icon-ic_hearing"></span>
+                        <span class="mls"> holberton_school-icon-ic_hearing</span>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Our Results Section -->
+    <section class="our-results">
+        <div class="container">
+            <h2>Our results speak for themselves</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+            <div class="results">
+                <div class="result-item">
+                    <span class="result-value">+2%</span>
+                    <p>Lorem ipsum dolor</p>
+                </div>
+                <div class="result-item">
+                    <span class="result-value">+2%</span>
+                    <p>Lorem ipsum dolor</p>
+                </div>
+                <div class="result-item">
+                    <span class="result-value">+2%</span>
+                    <p>Lorem ipsum dolor</p>
+                </div>
+                <div class="result-item">
+                    <span class="result-value">+2%</span>
+                    <p>Lorem ipsum dolor</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script>
+        const toggleMenu = document.querySelector('.toggle-menu');
+        const navLinks = document.querySelector('.nav-links');
+
+        toggleMenu.addEventListener('click', () => {
+            navLinks.classList.toggle('active');
+        });
+    </script>
+</body>
+</html>

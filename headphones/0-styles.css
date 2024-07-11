@@ -5,18 +5,16 @@ html, body, header, nav, ul, li, div, h1, p, a, img {
     box-sizing: border-box;
 }
 
-
 :root {
-    --primary-color: #333; 
+    --primary-color: #333;
     --secondary-color: #FFFFFF;
-    --font-family: 'Source Sans Pro', sans-serif; 
+    --font-family: 'Source Sans Pro', sans-serif;
 }
-
 
 body {
     font-family: var(--font-family);
     line-height: 1.6;
-    background-color: #f0f0f0; 
+    background-color: #f0f0f0;
     margin: 0 auto;
 }
 
@@ -40,10 +38,11 @@ header {
 .nav-links {
     list-style: none;
     display: flex;
+    justify-content: flex-end; /* Align items to the right */
 }
 
 .nav-links li {
-    margin-right: 20px;
+    margin-left: 20px; /* Adjust margin to separate items */
 }
 
 .nav-links li a {
@@ -53,7 +52,15 @@ header {
 }
 
 .nav-links li a:hover {
-    color: #FF6565; 
+    color: #FF6565;
+}
+
+.toggle-menu {
+    display: none;
+    font-size: 2rem;
+    cursor: pointer;
+    color: #fff;
+    margin-left: auto; /* Push toggle menu icon to the far right */
 }
 
 .hero {
@@ -91,21 +98,15 @@ header {
 }
 
 .btn:hover {
-    opacity: 0.9; 
+    opacity: 0.9;
 }
 
 /* Mobile Menu Toggle */
-.toggle-menu {
-    display: none;
-    font-size: 2rem;
-    cursor: pointer;
-    color: #fff;
-}
-
 @media (max-width: 768px) {
     .nav-links {
         display: none;
         flex-direction: column;
+        align-items: flex-end; /* Align items to the right for mobile */
     }
 
     .nav-links.active {
