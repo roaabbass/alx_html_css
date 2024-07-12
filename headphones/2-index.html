@@ -67,15 +67,6 @@
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                     </p>
                 </div>
-                <div class="service">
-                    <i class="icon-holberton_school-icon-4"></i>
-                    <h3>Lorem ipsum</h3>
-                    <p>
-                        <span class="holberton_school-icon-ic_hearing"></span>
-                        <span class="mls"> holberton_school-icon-ic_hearing</span>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                    </p>
-                </div>
             </div>
         </div>
     </section>
@@ -107,11 +98,8 @@
     </section>
 
     <script>
-        const toggleMenu = document.querySelector('.toggle-menu');
-        const navLinks = document.querySelector('.nav-links');
-
-        toggleMenu.addEventListener('click', () => {
-            navLinks.classList.toggle('active');
+        document.querySelector('.toggle-menu').addEventListener('click', () => {
+            document.querySelector('.nav-links').classList.toggle('active');
         });
     </script>
 </body>
