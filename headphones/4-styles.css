@@ -90,7 +90,6 @@
   }
   
   
-  
 html, body, header, nav, ul, li, div, h1, p, a, img {
     margin: 0;
     padding: 0;
@@ -323,6 +322,46 @@ header {
 
 .btn:hover {
     opacity: 0.9;
+}
+/* Footer styles */
+footer {
+    background-color: #000;
+    color: #fff;
+    padding: 20px 0;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer-logo img {
+    max-width: 100px; 
+    height: auto;
+}
+
+.follow-us {
+    text-align: right;
+}
+
+.follow-us h3 {
+    color: #fff;
+    margin-bottom: 10px;
+}
+
+.social-icons li {
+    display: inline-block;
+    margin-left: 10px; 
+}
+
+.social-icons li:first-child {
+    margin-left: 0;
+}
+
+.social-icons li a {
+    color: #fff;
+    font-size: 20px;
 }
 
 /* Responsive Styles */
