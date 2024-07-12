@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Headphone Company</title>
+    <link rel="stylesheet" href="7-styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <nav>
+                <div class="logo">
+                    <img src="images/logo_headphones.png" alt="Company Logo"> 
+                </div>
+                <ul class="nav-links">
+                    <li><a href="#">What we do</a></li>
+                    <li><a href="#">Our results</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                </ul>
+                <div class="toggle-menu">
+                    <i class="fas fa-bars"></i>
+                </div>
+            </nav>
+            <div class="hero">
+                <div class="container">
+                    <h1>Welcome to the Headphone Company</h1>
+                    <p>Your perfect sound companion</p>
+                    <a href="#" class="btn">CALL TO ACTION</a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- What We Do Section -->
+    <section class="what-we-do">
+        <div class="container">
+            <h2>What we do...</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+            <div class="services">
+                <div class="service">
+                    <i class="holberton_school-icon-arrow_1"></i>
+                    <h3>Lorem ipsum</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                </div>
+                <div class="service">
+                    <i class="holberton_school-icon-arrow_2"></i>
+                    <h3>Lorem ipsum</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                </div>
+                <div class="service">
+                    <i class="holberton_school-icon-arrow_3"></i>
+                    <h3>Lorem ipsum</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Our Results Section -->
+    <section class="our-results">
+        <div class="container">
+            <h2>Our results speak for themselves</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+            <div class="results">
+                <div class="result-item">
+                    <div class="pentagon"><span class="result-value">+2%</span></div>
+                    <p>Lorem ipsum dolor</p>
+                </div>
+                <div class="result-item">
+                    <div class="pentagon"><span class="result-value">+2%</span></div>
+                    <p>Lorem ipsum dolor</p>
+                </div>
+                <div class="result-item">
+                    <div class="pentagon"><span class="result-value">+2%</span></div>
+                    <p>Lorem ipsum dolor</p>
+                </div>
+                <div class="result-item">
+                    <div class="pentagon"><span class="result-value">+2%</span></div>
+                    <p>Lorem ipsum dolor</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="contact">
+        <div class="container">
+            <h1>Contact Us</h1>
+            <form action="#" method="post" id="contactForm">
+                <div class="form-group">
+                    <label for="name">Name</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="message">Message</label>
+                    <textarea id="message" name="message" rows="5" required></textarea>
+                </div>
+                <button type="submit" class="btn">Send Message</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-logo">
+                <img src="images/logo_headphones.png" alt="Company Logo">
+            </div>
+            <div class="footer-column follow-us">
+                <h3>Follow Us</h3>
+                <ul class="social-icons">
+                    <li><a href="#"><i class="fab fa-facebook"></i></a></li>
+                    <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                    <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        document.querySelector('.toggle-menu').addEventListener('click', () => {
+            document.querySelector('.nav-links').classList.toggle('active');
+        });
+    </script>
+</body>
+</html>
